@@ -1,0 +1,102 @@
+/*!* slick-carousel slider *!*/
+/*@import 'slick-carousel/slick/slick.css';*/
+/*@import 'slick-carousel/slick/slick-theme.css';*/
+
+/*!* scrollbar *!*/
+/*@import '../styles/scrollbar.css';*/
+
+/*!* to remove default browser focus-visible *!*/
+/*body * {*/
+/*  &:focus-visible,*/
+/*  &:focus {*/
+/*    outline: none;*/
+/*  }*/
+/*}*/
+
+/*html {*/
+/*  scroll-behavior: smooth;*/
+/*}*/
+
+
+
+/* slick-carousel slider */
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+/* scrollbar */
+@import '../styles/scrollbar.css';
+
+/* ==================  FONTS: IRANSansFaNum  ================== */
+
+/* مسیرها دقیقا با public/assets/fonts/iransans-fa هماهنگ شده‌اند */
+@font-face {
+  font-family: "IRANSansFaNum";
+  src: url("/assets/fonts/iransans-fa/IRANSansFaNum-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANSansFaNum";
+  src: url("/assets/fonts/iransans-fa/IRANSansFaNum-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANSansFaNum";
+  src: url("/assets/fonts/iransans-fa/IRANSansFaNum-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANSansFaNum";
+  src: url("/assets/fonts/iransans-fa/IRANSansFaNum-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANSansFaNum";
+  src: url("/assets/fonts/iransans-fa/IRANSansFaNum-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==================  GLOBAL RESET + FONT  ================== */
+
+html {
+  scroll-behavior: smooth;
+  font-family: "IRANSansFaNum", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: inherit;
+}
+
+/* این خط مهم‌ترین بخش است: همهٔ المان‌ها را مجبور می‌کند همین فونت را بگیرند */
+body * {
+  font-family: inherit !important;
+}
+
+/* حذف outline پیش‌فرض مرورگر (همان چیزی که قبلاً داشتی) */
+body *:focus-visible,
+body *:focus {
+  outline: none;
+}
+
+
+.mui-1ff23w1-MuiButtonBase-root-MuiButton-root .MuiButton-endIcon {
+  margin-right: 8px !important;
+}
+
+.mui-w2sdkc-MuiButtonBase-root-MuiButton-root .MuiButton-endIcon {
+  margin-right: 8px !important;
+}
