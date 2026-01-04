@@ -1,10 +1,4 @@
 import path from 'path';
-import { fileURLToPath } from 'url';
-
-/** Fix for __dirname in ESM (Vercel build) */
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 /** @type {import('next').NextConfig} */
 const cspHeader = `
     default-src 'self';
@@ -55,7 +49,7 @@ const nextConfig = {
   },
   webpack(config) {
     // Allow absolute imports from project root
-    config.resolve.modules.push(__dirname);
+    config.resolve.modules.push(path.resolve(process.cwd()));
     return config;
   }
 };
