@@ -1,4 +1,5 @@
-import path from 'path';
+const path = require('path');
+
 /** @type {import('next').NextConfig} */
 const cspHeader = `
     default-src 'self';
@@ -48,10 +49,10 @@ const nextConfig = {
     ];
   },
   webpack(config) {
-    // Allow absolute imports from project root
+    // Use project root instead of __dirname
     config.resolve.modules.push(path.resolve(process.cwd()));
     return config;
   }
 };
 
-export default nextConfig;
+module.exports = nextConfig;
