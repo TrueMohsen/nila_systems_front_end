@@ -16,7 +16,7 @@ const cspHeader = `
 
 const nextConfig = {
   experimental: {
-    appDir: true, // keep App Router enabled
+    appDir: true, // App Router enabled
   },
   modularizeImports: {
     '@mui/material': {
@@ -49,7 +49,7 @@ const nextConfig = {
     ];
   },
   webpack(config) {
-    // Use project root instead of __dirname
+    // Use project root (process.cwd()) instead for absolute imports
     config.resolve.modules.push(path.resolve(process.cwd()));
     return config;
   }
