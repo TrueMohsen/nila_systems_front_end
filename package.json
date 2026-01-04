@@ -25,9 +25,9 @@
     "framer-motion": "12.23.12",
     "lodash-es": "4.17.21",
     "motion": "12.23.12",
-    "next": "15.4.3",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "next": "^15.4.8",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react-hook-form": "7.60.0",
     "react-slick": "0.30.3",
     "slick-carousel": "1.8.1"
